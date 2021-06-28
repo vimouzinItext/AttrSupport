@@ -10,7 +10,7 @@ namespace Example
         {
             LicenseKey.LoadLicenseFile("iTextLicenseKey.xml");
             using (FileStream htmlSource = File.Open("input.html", FileMode.Open))
-            using (FileStream pdfDest = File.Open("output.pdf", FileMode.OpenOrCreate))
+            using (FileStream pdfDest = File.Open("cmp_checkAttrFunctionWithTypeTest.pdf", FileMode.OpenOrCreate))
             {
                 ConverterProperties converterProperties = new ConverterProperties();
                 HtmlConverter.ConvertToPdf(htmlSource, pdfDest, converterProperties);
